@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "iac"
+		},
+		{
+			"path": "consumer"
+		},
+		{
+			"path": "producer"
+		}
+	],
+	"settings": {
+		"debug.internalConsoleOptions": "neverOpen"
+	}
+}

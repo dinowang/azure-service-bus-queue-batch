@@ -1,0 +1,18 @@
+{
+    "version": "2.0",
+    "logging": {
+        "applicationInsights": {
+            "samplingExcludedTypes": "Request",
+            "samplingSettings": {
+                "isEnabled": true
+            }
+        }
+    },
+    "ServiceBusOptions": {
+        "BatchOptions": {
+            "MaxMessageCount": 50,
+            "OperationTimeout": "00:01:00",
+            "AutoComplete": "true"
+        }
+    }
+}

@@ -10,7 +10,7 @@
     },
     "ServiceBusOptions": {
         "BatchOptions": {
-            "MaxMessageCount": 50,
+            "MaxMessageCount": 100,
             "OperationTimeout": "00:01:00",
             "AutoComplete": "true"
         }

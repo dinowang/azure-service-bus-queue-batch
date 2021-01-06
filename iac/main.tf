@@ -4,10 +4,6 @@ provider "azurerm" {
 }
 
 resource "random_id" "code" {
-  keepers = {
-    # Generate a new id each time we switch to a new AMI id
-  }
-
   byte_length = 4
 }
 
@@ -84,3 +80,12 @@ resource "azurerm_function_app" "default" {
     ServiceBusConnection           = azurerm_servicebus_namespace_authorization_rule.sample.primary_connection_string
   }
 }
+
+output "ResourceGroup" {
+   value = azurerm_resource_group.default.name
+}
+
+output "ServiceBusConnection" {
+   value = azurerm_servicebus_namespace_authorization_rule.sample.primary_connection_string
+}
+

@@ -23,7 +23,7 @@ namespace producer
                 await topicSender.SendAsync(message);
 
                 Console.WriteLine(s);
-                Thread.Sleep(random.Next(200));
+                Thread.Sleep(random.Next(20));
             }
         }
     }
